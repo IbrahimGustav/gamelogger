@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Mafia",
+        "platform": "Steam",
+        "date_finished": "2025-30-11",
+        "type": "PCGame"
+    },
+    {
+        "title": "Shadow of the Colossus",
+        "platform": "PS2",
+        "date_finished": "2024-05-30",
+        "type": "ConsoleGame"
+    },
+    {
+        "title": "Test Drive Unlimited 2",
+        "platform": "Steam",
+        "date_finished": "2023-11-25",
+        "type": "PCGame"
+    }
+]
