@@ -74,12 +74,18 @@ def main():
 
         choice = input("Select an option: ")
 
-        if choice in ('1', '2'):
+        if choice == '1':
             title = input("Game Title: ")
-            platform = input("Platform (e.g., Steam, PS5): ")
+            platform = input("Platform (e.g., Steam, Epic): ")
             date = input("Date Finished (YYYY-MM-DD): ")
-            game_class = PCGame if choice == '1' else ConsoleGame
-            logger.add_entry(game_class(title, platform, date))
+            game = PCGame(title, platform, date)
+            logger.add_entry(game)
+       
+        elif choice == '2':
+            title = input("Game Title: ")
+            platform = input("Platform (e.g., PS5, Xbox): ")
+            date = input("Date Finished (YYYY-MM-DD): ")
+            game = ConsoleGame(title, platform, date)
 
         elif choice == '3':
             logger.display_entries()
